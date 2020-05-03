@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "ml-management-tools"
+version = "0.1.0"
+description = ""
+authors = ["chck <shimekiri.today@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+sacred = "^0.8.1"
+
+[tool.poetry.dev-dependencies]
+black = "^19.10b0"
+pylint = "^2.5.0"
+
+[tool.black]
+line-length = 120
+
+[tool.pylint]
+max-line-length = 120
+
+[build-system]
+requires = ["poetry-core>=1.0.0a5"]
+build-backend = "poetry.core.masonry.api"
