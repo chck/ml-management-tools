@@ -7,6 +7,7 @@ authors = ["chck <shimekiri.today@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.7"
 sacred = "^0.8.1"
+hydra-core = "^0.11.3"
 
 [tool.poetry.dev-dependencies]
 black = "^19.10b0"
