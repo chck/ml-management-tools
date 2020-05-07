@@ -6,7 +6,7 @@ ex = Experiment()
 @ex.config
 def my_config():
     recipient = "world"
-    message = f"Hello {recipient}!"
+    message: str = f"Hello {recipient}!"
 
 
 @ex.automain
