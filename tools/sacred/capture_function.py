@@ -7,18 +7,17 @@ ex.captured_out_filter = apply_backspaces_and_linefeeds
 
 
 @ex.config
-def my_config():
-    foo = 42
-    bar = "baz"
+def my_config() -> None:
+    pass
 
 
 @ex.capture
-def some_function(a, foo, bar=10):
+def some_function(a: int, foo: int, bar: int = 10) -> None:
     print(a, foo, bar)
 
 
 @ex.main
-def my_main():
+def my_main() -> None:
     some_function(1, 2, 3)  # 1 2 3
     some_function(1)  # 1 42 'baz'
     some_function(1, bar=12)  # 1 42 12

@@ -5,9 +5,11 @@ all: help
 
 .PHONY: vet  ## Run linter
 vet:
-	poetry run pylint $(SRC)
+	poetry run autoflake --remove-all-unused-imports --recursive --remove-unused-variables --in-place --exclude=__init__.py $(SRC)
 	poetry run black $(SRC)
+	poetry run isort $(SRC)
 	poetry run mypy $(SRC)
+	poetry run vulture --min-confidence=70 $(SRC)
 
 .PHONY: help ## View help
 help:

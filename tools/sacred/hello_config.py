@@ -4,11 +4,11 @@ ex = Experiment()
 
 
 @ex.config
-def my_config():
+def my_config() -> None:
     recipient = "world"
-    message: str = f"Hello {recipient}!"
+    f"Hello {recipient}!"
 
 
 @ex.automain
-def my_main(message):
+def my_main(message: str) -> None:
     print(message)
