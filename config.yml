@@ -1,0 +1,5 @@
+output_dir: tools/kedro
+project_name: tutorial
+repo_name: tutorial
+python_package: tutorial
+include_example: true
