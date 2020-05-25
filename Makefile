@@ -11,6 +11,10 @@ vet:
 	poetry run mypy $(SRC)
 	poetry run vulture --min-confidence=70 $(SRC)
 
+.PHONY: nb  ## Run JupyterLab
+nb:
+	poetry run jupyter lab --allow-root --no-browser
+
 .PHONY: help ## View help
 help:
 	@grep -E '^.PHONY: [a-zA-Z_-]+.*?## .*$$' $(MAKEFILE_LIST) | sed 's/^.PHONY: //g' | awk 'BEGIN {FS = "## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'

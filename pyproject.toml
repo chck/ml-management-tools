@@ -5,11 +5,31 @@ description = ""
 authors = ["chck <shimekiri.today@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = ">=3.6, <3.9"
 sacred = "^0.8.1"
 hydra-core = "^0.11.3"
 mlflow = "^1.8.0"
+jupyterlab = "^2.1.2"
+kaggle = "^1.5.6"
+matplotlib = "^3.2.1"
+scikit-learn = "^0.22.2"
+catboost = "^0.23"
+tensorflow = "2.1.*"
+optuna = "^1.4.0"
+scikit-optimize = "^0.7.4"
+apache-airflow = "^1.10.10"
+neptune-tensorboard = "^0.3.11"
+tensorflow-estimator = "2.1.*"
+lightgbm = "^2.3.1"
+kedro = "^0.16.1"
 
+[tool.poetry.dependencies.tensorflow-docs]
+git = "https://github.com/tensorflow/docs"
+
+
+[tool.poetry.dependencies.neptune-contrib]
+extras = ["monitoring"]
+version = "^0.20.0"
 [tool.poetry.dev-dependencies]
 black = "^19.10b0"
 isort = "^4.3.21"

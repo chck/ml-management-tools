@@ -148,3 +148,12 @@ multirun/
 
 # MLFlow
 mlruns/
+
+# Private data
+data/
+
+# Sacred
+sacredruns/
+
+# CatBoost
+catboost_info/
