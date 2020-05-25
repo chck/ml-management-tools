@@ -1,4 +1,5 @@
 defaults:
-  - db: mysql
-website:
-  domain: example.com
+#  - db: mysql
+  - model: elastic_net
+#website:
+#  domain: example.com

@@ -1,0 +1,4 @@
+model:
+  alpha: 0.0005
+  l1_ratio: 0.9
+  random_state: 3
