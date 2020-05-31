@@ -22,6 +22,7 @@ neptune-tensorboard = "^0.3.11"
 tensorflow-estimator = "2.1.*"
 lightgbm = "^2.3.1"
 kedro = "^0.16.1"
+google-cloud-storage = "^1.28.1"
 
 [tool.poetry.dependencies.tensorflow-docs]
 git = "https://github.com/tensorflow/docs"
