@@ -79,7 +79,7 @@ us_corn_yield_data:
     agg_level_desc: STATE
     year: 2000
 
-airplanes:
+example_model:
   type: pickle.PickleDataSet
   filepath: data/06_models/lightgbm.pkl.gz
   backend: joblib
