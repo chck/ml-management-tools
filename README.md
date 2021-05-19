@@ -1,3 +1,3 @@
 # ml-management-tools
 
-Blog: https://cyberagent.ai/blog/research/12898/
+Blog(Japanese): https://cyberagent.ai/blog/research/12898/
